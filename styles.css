@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'AE';
+  src: url('alexismarie.ttf');
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: AE;
+    user-select: none;
+}
+
+.container {
+  position: relative;
+  width: 80%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.hole {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #F8C8DC;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container {
+  position: absolute;
+  bottom: 14%;
+}
+
+.rounded-button {
+  background-color: white;
+  color: #F8C8DC;
+  font-family: AE;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  visibility: hidden;
+  cursor: pointer;
+}
